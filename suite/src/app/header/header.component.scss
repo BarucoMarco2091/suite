@@ -1,0 +1,25 @@
+@import '../header/responsivity.scss';
+@import '../header/variables.scss';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding-top: 5dvh;
+
+    button {
+        background-color: #f3ede7;
+        height: 8dvh;
+        width: 34dvh;
+        border-radius: 1dvh;
+        border: solid 1px;
+        font-weight: bold;
+        transition: background-color .8s;
+    }
+
+    button:hover {
+        background-color: $blue;
+        color: $white;
+    }
+}

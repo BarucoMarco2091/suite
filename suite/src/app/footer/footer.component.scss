@@ -1,0 +1,25 @@
+@import '../footer/responsivity.scss';
+@import '../footer/variables.scss';
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 15dvh;
+    padding-bottom: 15dvh;
+
+    .footer-copyright {
+        color: $gray;
+    }
+
+    i {
+        margin-right: 5dvh;
+        font-size: 1.4rem;
+        transition: color .8s;
+    }
+
+    i:hover {
+        color: $gray;
+    }
+}

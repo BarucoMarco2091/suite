@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 7dvh;
+}
+.container .curved {
+  position: absolute;
+  right: 190dvh;
+  top: 25dvh;
+  z-index: 22;
+}
+.container .text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 35dvh;
+  z-index: 7;
+}
+.container .text h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #172339;
+}
+.container .text span {
+  font-weight: bold;
+}
+.container .text p {
+  margin-top: 5dvh;
+  color: #49566d;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+.container .text button {
+  height: 8dvh;
+  width: 34dvh;
+  margin-top: 7dvh;
+  border-radius: 1dvh;
+  border: solid 1px;
+  font-weight: bold;
+  transition: background 0.8s;
+  color: #f3ede7;
+  background-color: #172339;
+}
+.container .text button:hover {
+  background: linear-gradient(135deg, #a060ff 0%, #cb30e3 49.21%, #ffa84e 100%);
+  color: #f3ede7;
+}
+.container img {
+  position: relative;
+  left: 67dvh;
+}
+.container .info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  right: 30dvh;
+  margin-top: 5dvh;
+}
+.container .info p {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10dvh;
+  color: #172339;
+}
+.container .info span {
+  color: #49566d;
+  margin-top: 3dvh;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.new-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  margin: auto;
+  margin-left: 15dvh;
+  margin-right: 15dvh;
+  background-color: #172339;
+  height: 80dvh;
+  margin-top: 16dvh;
+  border-radius: 3dvh;
+  background-image: url("/pattern-curved-line-2.svg");
+  background-repeat: no-repeat;
+  background-position: 80dvh 22dvh;
+}
+.new-container div {
+  flex: 1;
+}
+.new-container .picture {
+  background-image: url("/image-jeremy-small.png");
+  background-repeat: no-repeat;
+  background-size: 50dvh;
+  background-position-x: 20dvh;
+}
+.new-container .new-text {
+  margin-left: 30dvh;
+}
+.new-container .new-text h2 {
+  color: #f3ede7;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 10dvh;
+}
+.new-container .new-text span {
+  font-weight: bold;
+}
+.new-container .new-text p {
+  color: #f3ede7;
+  margin-top: 8dvh;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.new-container .new-text .name {
+  font-weight: bold;
+}
+.new-container .new-text .occupation {
+  margin-top: 1dvh;
+}/*# sourceMappingURL=main.component.css.map */

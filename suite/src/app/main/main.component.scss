@@ -1,0 +1,150 @@
+@import '../main/responsivity.scss';
+@import '../main/variables.scss';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 7dvh;
+
+    .curved {
+        position: absolute;
+        right: 190dvh;
+        top: 25dvh;
+        z-index: 22;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 35dvh;
+        z-index: 7;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            color: $blue;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 5dvh;
+            color: $gray;
+            line-height: 2rem;
+            font-size: 1.1rem;
+        }
+
+        button {
+            height: 8dvh;
+            width: 34dvh;
+            margin-top: 7dvh;
+            border-radius: 1dvh;
+            border: solid 1px;
+            font-weight: bold;
+            transition: background .8s;
+            color: $white;
+            background-color: $blue;
+        }
+
+        button:hover {
+            background: linear-gradient(
+                135deg,
+                $indigo 0%,
+                $pink 49.21%,
+                $orange 100%
+              );
+            color: $white;
+        }
+    }
+
+    img {
+        position: relative;
+        left: 67dvh;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        right: 30dvh;
+        margin-top: 5dvh;
+
+        p {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 10dvh;
+            color: $blue;
+        }
+
+        span {
+            color: $gray;
+            margin-top: 3dvh;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+    }
+}
+
+.new-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    margin: auto;
+    margin-left: 15dvh;
+    margin-right: 15dvh;
+    background-color: $blue;
+    height: 80dvh;
+    margin-top: 16dvh;
+    border-radius: 3dvh;
+    background-image: url('/pattern-curved-line-2.svg');
+    background-repeat: no-repeat;
+    background-position: 80dvh 22dvh;
+
+    div {
+        flex: 1;
+    }
+
+    .picture {
+        background-image: url('/image-jeremy-small.png');
+        background-repeat: no-repeat;
+        background-size: 50dvh;
+        background-position-x: 20dvh;
+    }
+
+    .new-text {
+        margin-left: 30dvh;
+
+        h2 {
+            color: $white;
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-top: 10dvh;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        p {
+            color: $white;
+            margin-top: 8dvh;
+            line-height: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        .occupation {
+            margin-top: 1dvh;
+        }
+    }
+}
