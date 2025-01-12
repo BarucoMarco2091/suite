@@ -1,1 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");/*# sourceMappingURL=responsivity.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+@media screen and (max-width: 768px) {
+  nav {
+    margin: 2dvh 2dvh !important;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=responsivity.css.map */

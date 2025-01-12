@@ -1,1 +1,67 @@
 @import '../main/variables.scss';
+
+@media screen and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .curved {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .text, .info {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    h1 {
+        color: $gray !important;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .img {
+        display: flex;
+        justify-content: center;
+
+        img {
+            position: static;
+            left: -5% !important;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .info {
+        position: static;
+        margin-top: 2dvh !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .new-container {
+        display: flex;
+        flex-direction: column !important;
+        margin-left: 2dvh !important;
+        margin-right: 2dvh !important;
+        margin-top: 3dvh !important;
+        height: 80%;
+    }
+
+    .new-text {
+        margin-left: 2dvh !important;
+        text-align: center;
+    }
+
+    .picture {
+        background-image: none !important;
+    }
+}

@@ -1,1 +1,11 @@
 @import '../footer/variables.scss';
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin: 2dvh 2dvh !important;
+        padding-bottom: 2dvh !important;
+        text-align: center;
+    }
+}

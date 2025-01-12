@@ -1,15 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .text, .info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  h1 {
+    color: #49566d !important;
+  }
+  button {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img {
+    display: flex;
+    justify-content: center;
+  }
+  .img img {
+    position: static;
+    left: -5% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info {
+    position: static;
+  }
+}
+@media screen and (max-width: 768px) {
+  .new-container {
+    display: flex;
+    margin-left: 2dvh !important;
+    margin-right: 2dvh !important;
+  }
+}
 .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1240px;
   margin: auto;
   margin-top: 7dvh;
 }
 .container .curved {
   position: absolute;
-  right: 190dvh;
+  right: 80%;
   top: 25dvh;
   z-index: 22;
 }
@@ -17,7 +59,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 35dvh;
+  top: 40%;
   z-index: 7;
 }
 .container .text h1 {
@@ -51,14 +93,17 @@
 }
 .container img {
   position: relative;
-  left: 67dvh;
+  left: 123%;
+  width: 100%;
+  height: auto;
 }
 .container .info {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   position: relative;
-  right: 30dvh;
+  left: -10%;
   margin-top: 5dvh;
 }
 .container .info p {
@@ -83,7 +128,7 @@
   margin-left: 15dvh;
   margin-right: 15dvh;
   background-color: #172339;
-  height: 80dvh;
+  height: 80%;
   margin-top: 16dvh;
   border-radius: 3dvh;
   background-image: url("/pattern-curved-line-2.svg");

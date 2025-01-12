@@ -4,13 +4,14 @@
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1240px;
     margin: auto;
     margin-top: 7dvh;
 
     .curved {
         position: absolute;
-        right: 190dvh;
+        right: 80%;
         top: 25dvh;
         z-index: 22;
     }
@@ -19,7 +20,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 35dvh;
+        top: 40%;
         z-index: 7;
 
         h1 {
@@ -64,15 +65,18 @@
 
     img {
         position: relative;
-        left: 67dvh;
+        left: 123%;
+        width: 100%;
+        height: auto;
     }
 
     .info {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         text-align: center;
         position: relative;
-        right: 30dvh;
+        left: -10%;
         margin-top: 5dvh;
 
         p {
@@ -100,7 +104,7 @@
     margin-left: 15dvh;
     margin-right: 15dvh;
     background-color: $blue;
-    height: 80dvh;
+    height: 80%;
     margin-top: 16dvh;
     border-radius: 3dvh;
     background-image: url('/pattern-curved-line-2.svg');
