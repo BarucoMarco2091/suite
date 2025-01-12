@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: column !important;
   }
+  .curved {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .text, .info {
@@ -32,13 +35,24 @@
 @media screen and (max-width: 768px) {
   .info {
     position: static;
+    margin-top: 2dvh !important;
   }
 }
 @media screen and (max-width: 768px) {
   .new-container {
     display: flex;
+    flex-direction: column !important;
     margin-left: 2dvh !important;
     margin-right: 2dvh !important;
+    margin-top: 3dvh !important;
+    height: 80%;
+  }
+  .new-text {
+    margin-left: 2dvh !important;
+    text-align: center;
+  }
+  .picture {
+    background-image: none !important;
   }
 }
 .container {
